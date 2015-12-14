@@ -1,0 +1,22 @@
+#indicatorContainerWrap,#indicatorContainer{
+    display:inline-block;
+    position:relative;
+}
+#prgLogo{
+    position:absolute;
+    width:60px;
+    height:35px;
+    margin-top:-18px;
+    /*margin-left:5px;*/
+}
+
+hr{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #080808;
+}
+
+
+

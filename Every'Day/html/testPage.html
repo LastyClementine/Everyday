@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PlanInfo Page</title>
+    <script src="../js/sql4meitian.js"></script>
+
+</head>
+
+<body onload="init();">
+<h1>使用HTML5本地数据库DEMO</h1>
+<table>
+    <tr><td>planid:</td><td><label><input type="text" id="planid"></label></td></tr>
+    <tr><td>planname:</td><td><label><input type="text" id="planname"></label></td></tr>
+    <tr><td>counttime:</td><td><label><input type="text" id="counttime"></label></td></tr>
+    <tr><td>startdate:</td><td><label><input type="text" id="startdate"></label></td></tr>
+    <tr><td>userid:</td><td><label><input type="text" id="userid"></label></td></tr>
+    <tr>
+        <td></td>
+        <td><input type="button" value="保存" onclick="saveData();"></td>
+    </tr>
+</table>
+<hr>
+<table id="datatable" border="1"></table>
+<p id="msg"></p>
+</body>
+
+
+</html>

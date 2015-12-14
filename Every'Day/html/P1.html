@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MainInfo P1</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/p1jsdemo.js"></script>
+    <script src="../js/authAbout.js"></script>
+
+    <script>
+        getAllPlanInfo();
+    </script>
+
+</head>
+
+<body>
+<div class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span> - yitian - </span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li id="subSelect"><a href="login.html" class="text-right" onclick="activeOnclick(1)">项目树</a></li>
+                <li id="contactUs"><a href="http://www.zzspider.com" class="text-right" onclick="activeOnclick(2)">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="background:#faaaaa;padding-left: 25px;padding-right: 40px;">
+    <div class="row">
+        <div class="col-xs-12 col-xs-push-1">
+            <p></p>
+            <p id="customer" class="text-left" style="display: block;">欢迎您回来，
+                <a id="username" href="#" class="text-right"></a>。
+                <br/>继续和我们一起运动健康，快乐成长吧！！
+            </p>
+        </div>
+        <div class="col-xs-12"><hr style="margin-top: 0;margin-bottom: 0;color: #000000"></div>
+        <div class="col-xs-4 col-xs-push-1">
+            <p></p>
+            <p class="text-right">已累计学习：
+                <br>获得经验值：
+                <br>击败了全国：
+                <br>获得等级：
+                <br>
+            </p>
+            <p></p>
+        </div>
+        <div class="col-xs-8">
+            <p></p>
+            <p class="text-center">
+                <a id="p1counttime" href="" class="text-right"></a>&nbsp;小时
+                <br>
+                <a id="p1exp" href="" class="text-right"></a>&nbsp;点
+                <br>
+                <a id="p1perdefeat" href="" class="text-right"></a>%的用户
+                <br>
+                <a id="p1level" href="" class="text-right"></a>
+                <br>
+            </p>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<div class="panel-body" id="div4project">
+    <div class="col-xs-12" id="insertFlag">
+        <p></p>
+        <p class="text-center"><strong> - 我&nbsp;的&nbsp;计&nbsp;划 - </strong></p>
+        <p></p>
+        <hr style="margin-top: 0;margin-bottom: 0;">
+    </div>
+
+</div>
+
+<div class="col-xs-12 text-center">
+    <a class="btn btn-block btn-primary" href="creatPlan.html">添加</a>
+    <br/>
+    <a><small>点我，添加新项目</small></a>
+</div>
+<!--<script type="text/template">-->
+    <!--<div id="plandemo1">-->
+        <!--<a href="P2.html">-->
+        <!--<div class="col-xs-4">-->
+            <!--<p></p>-->
+            <!--<p class="text-center" id="p1project"></p>-->
+            <!--<img src="../source/img/u14.jpg" class="img-responsive center-block" style="width:60px; height:60px;">-->
+        <!--</div>-->
+        <!--</a>-->
+        <!--<div class="col-xs-8">-->
+            <!--<div class="col-xs-5"><p></p><p class="text-left">称谓：</p></div>-->
+            <!--<div class="col-xs-7"><p></p><p class="text-center" id="p1projectlevel"><a href="#"></a></p></div>-->
+            <!--<div class="col-xs-3"><p class="text-left" id="p1projectlv"></p></div>-->
+            <!--<div class="col-xs-9"><div class="progress"><div class="progress-bar" role="progressbar" style="width: 1%;"> 0 % Complete</div></div></div>-->
+            <!--<div class="col-xs-12"><p class="text-left">距离下次成绩还有<a href="#">9</a>小时</p></div>-->
+            <!--<br/>-->
+        <!--</div>-->
+         <!--<div class="col-xs-12"><hr style="margin-top: 10px;margin-bottom: 0;"></div>-->
+    <!--</div>-->
+<!--</script>-->
+<script>
+    replaceUserInfo();
+    setPlanList4P1();
+</script>
+
+</body>
+</html>
